@@ -1,0 +1,68 @@
+.contact {
+    background-color: var(--branco);
+    padding: 1rem;
+}
+
+.contact__title,
+.contact__text,
+.contact__input {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.contact__title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact__text {
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.contact__input {
+    width: 90%;
+    padding: 1rem;
+    border: 1px solid var(--azul-escuro);
+    border-radius: 24px;
+    outline: none;
+}
+
+.contact__input::placeholder {
+    padding-left: 2rem;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 300;
+    background: url('/assets/icons/email.svg') no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        padding: 36px;
+    }
+
+    .contact__description {
+        width: 30%;
+    }
+
+    .contact__title {
+        font-size: 24px;
+    }
+
+    .contact__input {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contact {
+        padding: 3rem 20vh;
+    }
+}
